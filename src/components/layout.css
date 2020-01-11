@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  /* font-family: "Great Vibes", cursive; */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -185,7 +185,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  /* font: 112.5%/1.45em "Dancing Script", serif; */
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -198,9 +198,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
-body {
+/* body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: "Dancing Script", cursive;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -208,7 +208,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
-}
+} */
 img {
   max-width: 100%;
   margin-left: 0;
@@ -218,7 +218,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  /* margin-bottom: 1.45rem; */
 }
 h1 {
   margin-left: 0;

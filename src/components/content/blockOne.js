@@ -9,7 +9,7 @@ const BlockOne = () => (
       gridTemplateColumns: "50% auto",
     }}
   >
-    <img src={idaRoger} alt="" style={{}}></img>
+    <img src={idaRoger} alt=""></img>
     <div
       style={{
         display: "flex",
@@ -17,10 +17,9 @@ const BlockOne = () => (
         flexDirection: "column",
         alignContent: "center",
         margin: "auto",
-        fontFamily: "Parisienne, cursive",
       }}
     >
-      <div>Ida & Roger</div>
+      <div className="block-one-heading">Ida & Roger</div>
       <div>11/9/2020 - 13/9/2020</div>
       <div>Piemonte | Italien</div>
     </div>

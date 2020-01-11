@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import "../styles/global.scss"
 
 const Layout = ({ children }) => {
   return (
@@ -19,8 +20,7 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 1000,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
+          padding: `1rem 0 1rem 0`,
           background: "#dfdebb",
         }}
       >

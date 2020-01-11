@@ -1,15 +1,11 @@
 import React from "react"
 
 const WelcomeText = () => (
-  <div
-    style={{
-      padding: `3rem 0`,
-    }}
-  >
-    <b>Allora!</b>
+  <div className="welcome">
+    <h3>Allora! </h3>
     <p>
-      Allora! Vi gifter oss och vår önskan är att ni vill fira det tillsammans
-      med oss bland vinrankor och vackra vyer i Piemonte, Italien!
+      Vi gifter oss och vår önskan är att ni vill fira det tillsammans med oss
+      bland vinrankor och vackra vyer i Piemonte, Italien!
     </p>
     <p>
       Vi vet att det är mycket begärt att ta sig hela vägen till Italien för att

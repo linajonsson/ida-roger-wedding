@@ -1,5 +1,5 @@
 html {
-  /* font-family: "Great Vibes", cursive; */
+  font-family: "Arial";
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -7,6 +7,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.1rem;
 }
 article,
 aside,

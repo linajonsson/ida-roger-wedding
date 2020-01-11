@@ -1,0 +1,21 @@
+.block-one {
+  &-heading {
+    font-size: 50px;
+    font-family: Parisienne, "cursive";
+  }
+}
+
+.welcome {
+  padding: 2rem;
+}
+
+.destination {
+  background-image: url("../images/Piemonte-cropped.jpg");
+  background-size: cover;
+  padding: 4rem 2rem;
+
+  &-text {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+  }
+}

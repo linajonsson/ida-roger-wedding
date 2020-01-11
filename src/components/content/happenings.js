@@ -18,7 +18,7 @@ const Happenings = () => (
 export default Happenings
 
 const HappeningBlock = ({ img, header, events }) => (
-  <div style={{ color: "red" }}>
+  <div>
     <img alt="" src={img}></img>
     <div>{header}</div>
     <div>

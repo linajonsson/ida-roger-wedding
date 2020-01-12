@@ -1,7 +1,8 @@
 import React from "react"
 
 const Accomodation = () => (
-  <div>
+  <div className="accomodation" id="accomodation">
+    <h3>Boende</h3>
     <p>
       Under helgen (fredag - söndag) kommer vi att ha hela Relais Sant’Uffizio
       för oss själva där vi kommer att bo tillsammans med er. Ni behöver därför

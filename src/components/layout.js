@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 1000,
-          padding: `1rem 0 1rem 0`,
+          padding: `2rem 0`,
           background: "#dfdebb",
         }}
       >

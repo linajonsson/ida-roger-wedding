@@ -1,7 +1,7 @@
 import React from "react"
 
 const WelcomeText = () => (
-  <div className="welcome">
+  <div className="welcome" id="welcome">
     <h3>Allora! </h3>
     <p>
       Vi gifter oss och vår önskan är att ni vill fira det tillsammans med oss

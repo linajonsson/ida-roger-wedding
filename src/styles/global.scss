@@ -5,17 +5,249 @@
   }
 }
 
+h3 {
+  font-family: Parisienne, "cursive";
+  font-size: 30px;
+}
+
+.menu {
+  position: fixed;
+  left: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+
+  &-link {
+    padding: 0.5rem 0;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .border {
+    border-bottom: 1px solid grey;
+    width: 8rem;
+    margin: 0 auto;
+  }
+}
+
 .welcome {
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .destination {
   background-image: url("../images/Piemonte-cropped.jpg");
   background-size: cover;
   padding: 4rem 2rem;
+  text-align: center;
 
   &-text {
     background: rgba(255, 255, 255, 0.7);
-    padding: 2rem;
+    padding: 2rem 6rem;
   }
+}
+
+.accomodation {
+  padding: 3rem;
+}
+
+.transportation {
+  padding: 3rem;
+  background-color: #f5f5ea;
+
+  .header {
+    font-weight: bold;
+    text-decoration: underline;
+    padding-bottom: 1rem;
+  }
+
+  .alternatives {
+    display: flex;
+    align-items: center;
+  }
+
+  .subheader {
+    font-weight: bold;
+  }
+}
+
+.happenings {
+  padding: 2rem 3rem;
+
+  &-container {
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap: 1rem;
+
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #fff;
+
+    .header {
+      font-weight: bold;
+      padding-bottom: 1rem;
+    }
+
+    ul {
+      list-style-type: circle;
+    }
+  }
+}
+
+.rsvp {
+  padding: 2rem 3rem;
+  background-color: #f5f5ea;
+
+  button {
+    margin-top: 1.5rem;
+    // color: transparent;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    box-shadow: none;
+    cursor: pointer;
+    border: 2px solid #dfdebb;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: #f5f5ea;
+    }
+  }
+
+  input[type="radio"] {
+    background-color: #fff;
+  }
+}
+
+.toastMadames {
+  position: relative;
+  padding-bottom: 10rem;
+  &-text {
+    padding: 2rem 3rem;
+    position: absolute;
+    z-index: 5;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: white;
+    opacity: 0.9;
+    margin: 2rem 2rem;
+  }
+
+  img {
+    transform: rotate(90deg);
+    margin-top: 24rem;
+  }
+}
+
+$primary: #000;
+$secondary: #000;
+$white: #fff;
+$gray: #9b9b9b;
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid $gray;
+  outline: 0;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.1s;
+  font-size: 1rem;
+  color: $gray;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+    // font-weight: 700;
+  }
+  padding-bottom: 6px;
+  // font-weight: 700;
+  border-width: 2px;
+}
+/* reset input */
+.form__field {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}
+/* radio button*/
+.radio-button {
+  position: relative;
+  margin: 20px 0;
+}
+
+.radio-button input {
+  position: absolute;
+  margin: 5px;
+  padding: 0;
+  /* for mobile accessibility (iOS Label Bug) */
+  visibility: hidden;
+}
+.radio-button .label-visible {
+  margin-left: 2em;
+  margin-bottom: 0;
+}
+
+.fake-radiobutton {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #dfdebb;
+  background-color: white;
+}
+.fake-radiobutton:after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: #dfdebb;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.fake-radiobutton {
+  border-radius: 50%;
+}
+.fake-radiobutton:after {
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + span .fake-radiobutton:after {
+  display: block;
 }

@@ -11,10 +11,13 @@ import Accomodation from "../components/content/accomodation"
 import Transportation from "../components/content/transportation"
 import Happenings from "../components/content/happenings"
 import RsvpForm from "../components/content/rsvpForm"
+import ToastMadames from "../components/content/toastMadames"
+import Menu from "../components/content/menu"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="hej" />
+    <Menu />
     <BlockOne />
     <WelcomeText />
     <Destination />
@@ -22,6 +25,7 @@ const IndexPage = () => (
     <Transportation />
     <Happenings />
     <RsvpForm />
+    <ToastMadames />
   </Layout>
 )
 

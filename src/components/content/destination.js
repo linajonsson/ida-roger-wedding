@@ -2,7 +2,7 @@ import React from "react"
 import piemonte from "../../images/Piemonte.jpg"
 
 const Destination = () => (
-  <div className="destination">
+  <div className="destination" id="destination">
     <div className="destination-text">
       <p>
         Vi har kommit att förälska oss i Piemonte med dess vackra vinmarker. Det
@@ -21,6 +21,7 @@ const Destination = () => (
         <a href="http://www.relaissantuffizio.com" target="_blank">
           www.relaissantuffizio.com
         </a>
+        .
       </p>
     </div>
   </div>

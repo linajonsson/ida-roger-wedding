@@ -2,13 +2,7 @@ import React from "react"
 import idaRoger from "../../images/ida-roger-cropped.jpeg"
 
 const BlockOne = () => (
-  <div
-    style={{
-      background: "white",
-      display: "grid",
-      gridTemplateColumns: "50% auto",
-    }}
-  >
+  <div className="block-one">
     <img src={idaRoger} alt=""></img>
     <div
       style={{

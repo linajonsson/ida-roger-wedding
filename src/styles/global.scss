@@ -1,7 +1,16 @@
+$break-point: 600px;
+
 .block-one {
+  background: white;
+  display: grid;
+  grid-template-columns: 50% auto;
   &-heading {
-    font-size: 50px;
+    font-size: 30px;
     font-family: Parisienne, "cursive";
+
+    @media only screen and (min-width: $break-point) {
+      font-size: 50px;
+    }
   }
 }
 
@@ -11,6 +20,7 @@ h3 {
 }
 
 .menu {
+  display: none;
   position: fixed;
   left: 3rem;
   top: 50%;
@@ -33,28 +43,46 @@ h3 {
 }
 
 .welcome {
-  padding: 3rem;
+  padding: 2rem 1rem;
+  @media only screen and (min-width: $break-point) {
+    padding: 3rem;
+  }
 }
 
 .destination {
   background-image: url("../images/Piemonte-cropped.jpg");
   background-size: cover;
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 
   &-text {
     background: rgba(255, 255, 255, 0.7);
-    padding: 2rem 6rem;
+    padding: 1rem;
+  }
+
+  @media only screen and (min-width: $break-point) {
+    padding: 4rem 2rem;
+
+    &-text {
+      padding: 2rem 6rem;
+    }
   }
 }
 
 .accomodation {
-  padding: 3rem;
+  padding: 2rem 1rem;
+  @media only screen and (min-width: $break-point) {
+    padding: 3rem;
+  }
 }
 
 .transportation {
-  padding: 3rem;
   background-color: #f5f5ea;
+  padding: 2rem 1rem;
+
+  @media only screen and (min-width: $break-point) {
+    padding: 3rem;
+  }
 
   .header {
     font-weight: bold;
@@ -73,35 +101,52 @@ h3 {
 }
 
 .happenings {
-  padding: 2rem 3rem;
+  padding: 2rem 1rem;
 
   &-container {
-    display: grid;
-    grid-template-columns: 30% auto;
-    gap: 1rem;
-
     margin: 2rem 0;
     padding: 1rem;
     background-color: #fff;
 
+    img {
+      display: none;
+    }
+
     .header {
       font-weight: bold;
       padding-bottom: 1rem;
+      text-align: center;
     }
 
     ul {
       list-style-type: circle;
     }
   }
+
+  @media only screen and (min-width: $break-point) {
+    padding: 2rem 3rem;
+    &-container {
+      display: grid;
+      grid-template-columns: 30% auto;
+      gap: 1rem;
+
+      .header {
+        padding-bottom: 2rem;
+      }
+
+      img {
+        display: block;
+      }
+    }
+  }
 }
 
 .rsvp {
-  padding: 2rem 3rem;
+  padding: 2rem 1rem;
   background-color: #f5f5ea;
 
   button {
     margin-top: 1.5rem;
-    // color: transparent;
     padding: 0.5rem 1rem;
     background-color: #fff;
     box-shadow: none;
@@ -114,16 +159,85 @@ h3 {
     }
   }
 
+  $primary: #000;
+  $secondary: #000;
+  $white: #fff;
+  $gray: #9b9b9b;
+
+  .form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+  }
+
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid $gray;
+    outline: 0;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:placeholder-shown ~ .form__label {
+      cursor: text;
+      top: 20px;
+    }
+  }
+
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.1s;
+    font-size: 1rem;
+    color: $gray;
+  }
+
+  .form__field:focus {
+    ~ .form__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: $primary;
+    }
+
+    padding-bottom: 6px;
+    border-width: 2px;
+  }
+  /* reset input */
+  .form__field {
+    &:required,
+    &:invalid {
+      box-shadow: none;
+    }
+  }
+
+  .radio-buttons {
+    margin-top: 2rem;
+  }
+
   input[type="radio"] {
     background-color: #fff;
+  }
+
+  @media only screen and (min-width: $break-point) {
+    padding: 2rem 3rem;
   }
 }
 
 .toastMadames {
   position: relative;
-  padding-bottom: 10rem;
+  padding-bottom: 12rem;
   &-text {
-    padding: 2rem 3rem;
+    padding: 2rem 1rem;
     position: absolute;
     z-index: 5;
     margin: 0 auto;
@@ -131,80 +245,28 @@ h3 {
     right: 0;
     background-color: white;
     opacity: 0.9;
-    margin: 2rem 2rem;
+    margin: 2rem 1rem;
   }
 
   img {
     transform: rotate(90deg);
     margin-top: 24rem;
   }
-}
 
-$primary: #000;
-$secondary: #000;
-$white: #fff;
-$gray: #9b9b9b;
-.form__group {
-  position: relative;
-  padding: 15px 0 0;
-  margin-top: 10px;
-  width: 50%;
-}
+  @media only screen and (min-width: $break-point) {
+    padding-bottom: 10rem;
 
-.form__field {
-  font-family: inherit;
-  width: 100%;
-  border: 0;
-  border-bottom: 1px solid $gray;
-  outline: 0;
-  padding: 7px 0;
-  background: transparent;
-  transition: border-color 0.2s;
-
-  &::placeholder {
-    color: transparent;
-  }
-
-  &:placeholder-shown ~ .form__label {
-    cursor: text;
-    top: 20px;
+    &-text {
+      padding: 2rem 3rem;
+      margin: 2rem 2rem;
+    }
   }
 }
 
-.form__label {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.1s;
-  font-size: 1rem;
-  color: $gray;
-}
-
-.form__field:focus {
-  ~ .form__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-    font-size: 1rem;
-    color: $primary;
-    // font-weight: 700;
-  }
-  padding-bottom: 6px;
-  // font-weight: 700;
-  border-width: 2px;
-}
-/* reset input */
-.form__field {
-  &:required,
-  &:invalid {
-    box-shadow: none;
-  }
-}
 /* radio button*/
 .radio-button {
   position: relative;
-  margin: 20px 0;
+  margin: 20px 10px 20px 0;
 }
 
 .radio-button input {

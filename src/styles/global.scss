@@ -2,31 +2,54 @@ $break-point: 600px;
 
 .block-one {
   background: white;
-  display: grid;
-  grid-template-columns: 50% auto;
+  height: 386px;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+    padding: 1rem 0;
+  }
+
+  &-img-desktop {
+    display: none;
+  }
 
   &-text {
     font-size: 14px;
-
-    @media only screen and (min-width: $break-point) {
-      font-size: 16px;
-    }
   }
+
   &-heading {
     font-family: Parisienne, "cursive";
     font-size: 30px;
     margin-bottom: 8px;
+  }
 
-    @media only screen and (min-width: $break-point) {
+  @media only screen and (min-width: $break-point) {
+    display: grid;
+    grid-template-columns: 50% auto;
+    height: auto;
+    &-text {
+      font-size: 16px;
+    }
+    &-heading {
       font-size: 50px;
       margin-bottom: 18px;
+    }
+    &-img-desktop {
+      display: block;
+    }
+    &-img-mobile {
+      display: none;
     }
   }
 }
 
 h3 {
-  font-family: Parisienne, "cursive";
-  font-size: 30px;
+  font-family: Parisienne, "cursive" !important;
+  font-size: 30px !important;
 }
 
 .menu {
@@ -54,7 +77,10 @@ h3 {
 
 .welcome {
   padding: 2rem 1rem;
+  background-color: #fff;
+  margin: 1rem;
   @media only screen and (min-width: $break-point) {
+    margin: 2rem;
     padding: 3rem;
   }
 }
@@ -80,9 +106,15 @@ h3 {
 }
 
 .accomodation {
-  padding: 2rem 1rem;
+  margin: 1rem;
+
+  &-text {
+    padding: 1rem;
+    background-color: #fff;
+  }
   @media only screen and (min-width: $break-point) {
-    padding: 3rem;
+    // padding: 3rem;
+    margin: 2rem 0;
   }
 }
 

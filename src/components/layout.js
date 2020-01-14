@@ -5,29 +5,28 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import "./layout.css"
+import React from "react"
 import "../styles/global.scss"
+import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div
+      style={{
+        background: "#dfdebb",
+      }}
+    >
       <div
         style={{
           margin: `0 auto`,
           maxWidth: 1000,
-          padding: `2rem 0`,
-          background: "#dfdebb",
         }}
       >
         <main>{children}</main>
         <footer></footer>
       </div>
-    </>
+    </div>
   )
 }
 

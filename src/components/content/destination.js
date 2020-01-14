@@ -4,6 +4,7 @@ import piemonte from "../../images/Piemonte.jpg"
 const Destination = () => (
   <div className="destination" id="destination">
     <div className="destination-text">
+      <h3>Platsen för helgen</h3>
       <p>
         Vi har kommit att förälska oss i Piemonte med dess vackra vinmarker. Det
         var även i Piemonte som vi förlovade oss sommaren 2019.

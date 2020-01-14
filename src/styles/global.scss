@@ -115,6 +115,9 @@ h3 {
   @media only screen and (min-width: $break-point) {
     // padding: 3rem;
     margin: 2rem 0;
+    &-text {
+      padding: 2rem;
+    }
   }
 }
 

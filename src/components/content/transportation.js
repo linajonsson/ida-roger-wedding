@@ -1,5 +1,5 @@
 import React from "react"
-import * as transportationInfo from "./transportationInfo"
+import { transportationInfo } from "./transportationInfo"
 import car from "../../images/icons/directions_car-24px.svg"
 import train from "../../images/icons/train-24px.svg"
 

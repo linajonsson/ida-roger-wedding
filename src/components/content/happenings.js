@@ -1,5 +1,5 @@
 import React from "react"
-import * as happeningsInfo from "./happeningsInfo"
+import { happeningsInfo } from "./happeningsInfo"
 import hotel from "../../images/location-hotel.jpeg"
 import hotelFasad from "../../images/SantUffizio-fasad.jpg"
 import whine from "../../images/Vin.jpg"

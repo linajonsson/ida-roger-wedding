@@ -14,8 +14,8 @@ const BlockOne = () => (
       }}
     >
       <div className="block-one-heading">Ida & Roger</div>
-      <div>11/9/2020 - 13/9/2020</div>
-      <div>Piemonte | Italien</div>
+      <div className="block-one-text">11/9/2020 - 13/9/2020</div>
+      <div className="block-one-text">Piemonte | Italien</div>
     </div>
   </div>
 )

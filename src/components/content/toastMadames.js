@@ -2,8 +2,8 @@ import React from "react"
 import lisaKajsa from "../../images/lisa-kajsa.jpeg"
 
 const ToastMadames = () => (
-  <div className="toastMadames" id="toastmadames">
-    <div className="toastMadames-text">
+  <div className="toastmadames" id="toastmadames">
+    <div className="toastmadames-text">
       <h3>Toastmadames</h3>
       <p>
         Vi är otroligt glada att våra fantastiska vänner Lisa Englund och Kajsa
@@ -30,8 +30,16 @@ const ToastMadames = () => (
         särskild utrustning (t.ex. projektor) och ungefär hur lång tid det
         kommer att ta.
       </p>
-      <div>Lisa Englund 073 039 47 62 Mailadress</div>
-      <div> Kajsa Wahlstedt 072 730 62 61 Mailadress</div>
+      <div className="toastmadames-details">
+        <div>Lisa Englund </div>
+        <div>073 039 47 62</div>
+        <div> Mailadress</div>
+      </div>
+      <div>
+        <div> Kajsa Wahlstedt</div>
+        <div> 072 730 62 61</div>
+        <div> Mailadress</div>
+      </div>
     </div>
     <img src={lisaKajsa} alt="toastmadames"></img>
   </div>

@@ -15,7 +15,9 @@ const Accomodation = () => (
     </p>
 
     <div>
-      La Villa Annika Loi E-post: Annika.loi@lavilla.se Tel:08-514 202 94
+      <div>La Villa Annika </div>
+      <div>E-post: Annika.loi@lavilla.se </div>
+      <div>Tel:08-514 202 94</div>
     </div>
   </div>
 )

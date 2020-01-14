@@ -8,11 +8,14 @@ const icons = [car, train]
 const Transportation = () => (
   <div className="transportation" id="transportation">
     <h3>Hur tar man sig dit?</h3>
-    Till Relais Sant’Uffizio tar ni er enklast genom att flyga till Milano eller
-    Turin.
-    {transportationInfo.map(info => {
+    <p>
+      Till Relais Sant’Uffizio tar ni er enklast genom att flyga till Milano
+      eller Turin.
+    </p>
+    {transportationInfo.map((info, index) => {
       return (
         <TransportationBlock
+          key={index}
           header={info.header}
           text={info.text}
           alternatives={info.children}
@@ -25,7 +28,7 @@ const Transportation = () => (
 export default Transportation
 
 const TransportationBlock = ({ header, text, alternatives }) => (
-  <div style={{ padding: "1rem 0" }}>
+  <div className="transportation-block">
     <div className="header">{header}</div>
     <p>{text}</p>
     {alternatives.map((a, index) => {

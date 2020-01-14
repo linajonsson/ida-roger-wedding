@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 const RsvpForm = () => {
-  const [isAttending, setIsAttending] = useState(false)
+  const [isAttending, setIsAttending] = useState(true)
 
   return (
     <div className="rsvp" id="rsvp">
@@ -20,6 +20,7 @@ const RsvpForm = () => {
               onChange={e => {
                 setIsAttending(e.target.value === "attending")
               }}
+              checked={isAttending}
             />
             <span class="label-visible">
               <span class="fake-radiobutton"></span>
@@ -35,6 +36,7 @@ const RsvpForm = () => {
               onChange={e => {
                 setIsAttending(e.target.value === "attending")
               }}
+              checked={!isAttending}
             />
             <span class="label-visible">
               <span class="fake-radiobutton"></span>
@@ -60,13 +62,13 @@ const Input = ({ label, id }) => (
   <div class="form__group field">
     <input
       type="input"
-      class="form__field"
+      className="form__field"
       placeholder={label}
       name={id}
       id={id}
       required
     />
-    <label for={id} class="form__label">
+    <label htmlFor={id} class="form__label">
       {label}
     </label>
   </div>

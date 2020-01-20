@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 const RsvpForm = () => {
-  const [numberOfPeople, setNumerOfPeople] = useState(1)
+  const [numberOfPeople, setNumberOfPeople] = useState(2)
 
   const renderForm = numberOfPeople => {
     const forms = []
@@ -18,7 +18,7 @@ const RsvpForm = () => {
         <p>Hur många vill du anmäla?</p>
         <select
           value={numberOfPeople}
-          onChange={e => setNumerOfPeople(e.target.value)}
+          onChange={e => setNumberOfPeople(e.target.value)}
         >
           <option>1</option>
           <option>2</option>

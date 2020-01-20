@@ -3,8 +3,8 @@ import lisaKajsa from "../../images/lisa-kajsa.jpeg"
 
 const ToastMadames = () => (
   <div className="toastmadames" id="toastmadames">
+    <h3>Toastmadames</h3>
     <div className="toastmadames-text">
-      <h3>Toastmadames</h3>
       <p>
         Vi är otroligt glada att våra fantastiska vänner Lisa Englund och Kajsa
         Wahlstedt har åtagit sig uppdraget att hålla i taktpinnen under

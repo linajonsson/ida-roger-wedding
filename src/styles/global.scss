@@ -1,5 +1,16 @@
 $break-point: 600px;
 
+h3 {
+  font-family: Parisienne, "cursive" !important;
+  font-size: 30px !important;
+  text-align: center;
+  margin: 1.5rem 0 1rem !important;
+
+  @media only screen and (min-width: $break-point) {
+    font-size: 36px !important;
+  }
+}
+
 .block-one {
   background: white;
   height: 418px;
@@ -40,12 +51,6 @@ $break-point: 600px;
   }
 }
 
-h3 {
-  font-family: Parisienne, "cursive" !important;
-  font-size: 36px !important;
-  text-align: center;
-}
-
 .menu {
   display: none;
   position: fixed;
@@ -69,15 +74,15 @@ h3 {
   }
 }
 
-.welcome {
-  padding: 2rem 1rem;
-  background-color: #fff;
-  margin: 1rem;
-  @media only screen and (min-width: $break-point) {
-    margin: 2rem;
-    padding: 3rem;
-  }
-}
+// .welcome {
+//   padding: 2rem 1rem;
+//   background-color: #fff;
+//   margin: 1rem;
+//   @media only screen and (min-width: $break-point) {
+//     margin: 2rem;
+//     padding: 3rem;
+//   }
+// }
 
 .destination {
   background-image: url("../images/Piemonte-cropped.jpg");
@@ -99,30 +104,22 @@ h3 {
   }
 }
 
-.accomodation {
+.container {
   margin: 1rem;
 
   &-text {
     padding: 1rem;
-    background-color: #fff;
+    background-color: #f5f5ea;
   }
   @media only screen and (min-width: $break-point) {
-    // padding: 3rem;
-    margin: 2rem 0;
+    margin: 3rem 0 2rem 0;
     &-text {
-      padding: 2rem;
+      padding: 3rem;
     }
   }
 }
 
 .transportation {
-  background-color: #f5f5ea;
-  padding: 2rem 1rem;
-
-  @media only screen and (min-width: $break-point) {
-    padding: 3rem;
-  }
-
   &-block {
     padding-top: 1rem;
 
@@ -149,7 +146,7 @@ h3 {
 }
 
 .happenings {
-  padding: 2rem 1rem;
+  margin: 1rem;
 
   &-container {
     margin: 2rem 0;
@@ -177,11 +174,12 @@ h3 {
   }
 
   @media only screen and (min-width: $break-point) {
-    padding: 2rem 3rem;
+    margin: 3rem 0 2rem 0;
     &-container {
       display: grid;
       grid-template-columns: 30% auto;
       gap: 1rem;
+      padding: 1.5rem;
 
       .header {
         padding-bottom: 2rem;
@@ -302,7 +300,7 @@ h3 {
     right: 0;
     background-color: white;
     opacity: 0.9;
-    margin: 2rem 1rem;
+    margin: 0rem 1rem;
   }
   &-details {
     margin-bottom: 1rem;
@@ -314,11 +312,12 @@ h3 {
   }
 
   @media only screen and (min-width: $break-point) {
-    padding-bottom: 8rem;
+    padding-bottom: 10rem;
+    margin: 3rem 0 0 0;
 
     &-text {
       padding: 2rem 3rem;
-      margin: 2rem 2rem;
+      margin: 0;
     }
   }
 }

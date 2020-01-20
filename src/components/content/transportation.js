@@ -6,22 +6,24 @@ import train from "../../images/icons/train-24px.svg"
 const icons = [car, train]
 
 const Transportation = () => (
-  <div className="transportation" id="transportation">
+  <div className="container" id="transportation">
     <h3>Hur tar man sig dit?</h3>
-    <p>
-      Till Relais Sant’Uffizio tar ni er enklast genom att flyga till Milano
-      eller Turin.
-    </p>
-    {transportationInfo.map((info, index) => {
-      return (
-        <TransportationBlock
-          key={index}
-          header={info.header}
-          text={info.text}
-          alternatives={info.children}
-        />
-      )
-    })}
+    <div className="container-text">
+      <p>
+        Till Relais Sant’Uffizio tar ni er enklast genom att flyga till Milano
+        eller Turin.
+      </p>
+      {transportationInfo.map((info, index) => {
+        return (
+          <TransportationBlock
+            key={index}
+            header={info.header}
+            text={info.text}
+            alternatives={info.children}
+          />
+        )
+      })}
+    </div>
   </div>
 )
 

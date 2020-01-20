@@ -15,16 +15,17 @@ const RsvpForm = () => {
     <div className="container" id="rsvp">
       <h3>OSA</h3>
       <div className="container-text rsvp">
+        <p>Hur många vill du anmäla?</p>
+        <select
+          value={numberOfPeople}
+          onChange={e => setNumerOfPeople(e.target.value)}
+        >
+          <option>1</option>
+          <option>2</option>
+        </select>
         <form name="RSVP Form" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="RSVP Form" />
-          <p>Hur många vill du anmäla?</p>
-          <select
-            value={numberOfPeople}
-            onChange={e => setNumerOfPeople(e.target.value)}
-          >
-            <option>1</option>
-            <option>2</option>
-          </select>
+
           {renderForm(numberOfPeople)}
           <button type="submit">Skicka</button>
         </form>
@@ -41,7 +42,7 @@ const FormFields = ({ index }) => {
   return (
     <>
       <p>Person {index}</p>
-      <Input id={`name${index}`} label="Namn" />
+      <Input label="Namn" id={`name-${index}`} />
 
       <div className="radio-buttons">
         <p>Kommer du?</p>
@@ -79,9 +80,12 @@ const FormFields = ({ index }) => {
       </div>
       {isAttending && (
         <>
-          <Input id="foodPreferences" label="Allergier/specialkost:" />
           <Input
-            id="song"
+            id={`foodPreferences-${index}`}
+            label="Allergier/specialkost:"
+          />
+          <Input
+            id={`song-${index}`}
             label="Önska en låt som får dig att svänga på höfterna"
           />
         </>

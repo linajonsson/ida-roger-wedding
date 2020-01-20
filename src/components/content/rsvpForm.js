@@ -86,7 +86,7 @@ const FormFields = ({ index }) => {
           />
           <Input
             id={`song-${index}`}
-            label="Önska en låt som får dig att svänga på höfterna"
+            label={`Önska en låt som får dig att svänga på höfterna-${index}`}
           />
         </>
       )}

@@ -1,7 +1,15 @@
 import React, { useState } from "react"
 
 const RsvpForm = () => {
-  const [isAttending, setIsAttending] = useState(true)
+  const [numberOfPeople, setNumerOfPeople] = useState(1)
+
+  const renderForm = numberOfPeople => {
+    const forms = []
+    for (var i = 1; i <= numberOfPeople; i++) {
+      forms.push(<FormFields index={i} />)
+    }
+    return forms
+  }
 
   return (
     <div className="container" id="rsvp">
@@ -9,51 +17,15 @@ const RsvpForm = () => {
       <div className="container-text rsvp">
         <form name="RSVP Form" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="RSVP Form" />
-          <Input id="name" label="Namn" />
-
-          <div className="radio-buttons">
-            <p>Kommer du?</p>
-            <label class="radio-button">
-              <input
-                type="radio"
-                name="Kommer du?"
-                value="attending"
-                onChange={e => {
-                  setIsAttending(e.target.value === "attending")
-                }}
-                checked={isAttending}
-              />
-              <span class="label-visible">
-                <span class="fake-radiobutton"></span>
-                Självklart!
-              </span>
-            </label>
-
-            <label class="radio-button">
-              <input
-                type="radio"
-                name="Kommer du?"
-                value="cantGo"
-                onChange={e => {
-                  setIsAttending(e.target.value === "attending")
-                }}
-                checked={!isAttending}
-              />
-              <span class="label-visible">
-                <span class="fake-radiobutton"></span>
-                Tyvärr kan jag inte 😢
-              </span>
-            </label>
-          </div>
-          {isAttending && (
-            <>
-              <Input id="foodPreferences" label="Allergier/specialkost:" />
-              <Input
-                id="song"
-                label="Önska en låt som får dig att svänga på höfterna"
-              />
-            </>
-          )}
+          <p>Hur många vill du anmäla?</p>
+          <select
+            value={numberOfPeople}
+            onChange={e => setNumerOfPeople(e.target.value)}
+          >
+            <option>1</option>
+            <option>2</option>
+          </select>
+          {renderForm(numberOfPeople)}
           <button type="submit">Skicka</button>
         </form>
       </div>
@@ -62,6 +34,61 @@ const RsvpForm = () => {
 }
 
 export default RsvpForm
+
+const FormFields = ({ index }) => {
+  const [isAttending, setIsAttending] = useState(true)
+
+  return (
+    <>
+      <p>Person {index}</p>
+      <Input id={`name${index}`} label="Namn" />
+
+      <div className="radio-buttons">
+        <p>Kommer du?</p>
+        <label class="radio-button">
+          <input
+            type="radio"
+            name={`Kommer du? ${index}`}
+            value="attending"
+            onChange={e => {
+              setIsAttending(e.target.value === "attending")
+            }}
+            checked={isAttending}
+          />
+          <span class="label-visible">
+            <span class="fake-radiobutton"></span>
+            Självklart!
+          </span>
+        </label>
+
+        <label class="radio-button">
+          <input
+            type="radio"
+            name={`Kommer du? ${index}`}
+            value="cantGo"
+            onChange={e => {
+              setIsAttending(e.target.value === "attending")
+            }}
+            checked={!isAttending}
+          />
+          <span class="label-visible">
+            <span class="fake-radiobutton"></span>
+            Tyvärr kan jag inte
+          </span>
+        </label>
+      </div>
+      {isAttending && (
+        <>
+          <Input id="foodPreferences" label="Allergier/specialkost:" />
+          <Input
+            id="song"
+            label="Önska en låt som får dig att svänga på höfterna"
+          />
+        </>
+      )}
+    </>
+  )
+}
 
 const Input = ({ label, id }) => (
   <div class="form__group field">

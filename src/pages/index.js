@@ -10,6 +10,8 @@ import Transportation from "../components/content/transportation"
 import WelcomeText from "../components/content/welcomeText"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import DressCode from "../components/content/dressCode"
+import Surroundings from "../components/content/surroundings"
 
 const IndexPage = () => (
   <Layout>
@@ -22,7 +24,9 @@ const IndexPage = () => (
     <Transportation />
     <Happenings />
     <RsvpForm />
+    <DressCode />
     <ToastMadames />
+    <Surroundings />
   </Layout>
 )
 

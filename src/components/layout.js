@@ -12,17 +12,8 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
-    <div
-      style={{
-        background: "#dfdebb",
-      }}
-    >
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 900,
-        }}
-      >
+    <div className="background">
+      <div className="main">
         <main>{children}</main>
         <footer></footer>
       </div>

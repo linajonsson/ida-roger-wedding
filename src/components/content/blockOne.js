@@ -3,7 +3,6 @@ import idaRoger from "../../images/ida-roger-cropped.jpeg"
 
 const BlockOne = () => (
   <div className="block-one">
-    <img src={idaRoger} alt="" className="block-one-img-desktop"></img>
     <div className="block-one-container">
       <div className="block-one-heading">Ida & Roger</div>
       <div className="block-one-text">11/9/2020 - 13/9/2020</div>

@@ -15,7 +15,7 @@ const RsvpForm = () => {
           <label class="radio-button">
             <input
               type="radio"
-              name="radio"
+              name="Kommer du?"
               value="attending"
               onChange={e => {
                 setIsAttending(e.target.value === "attending")
@@ -31,7 +31,7 @@ const RsvpForm = () => {
           <label class="radio-button">
             <input
               type="radio"
-              name="radio"
+              name="Kommer du?"
               value="cantGo"
               onChange={e => {
                 setIsAttending(e.target.value === "attending")
@@ -47,7 +47,10 @@ const RsvpForm = () => {
         {isAttending && (
           <>
             <Input id="foodPreferences" label="Allergier/specialkost:" />
-            <Input id="song" label="Önska en låt till dansgolvet" />
+            <Input
+              id="song"
+              label="Önska en låt som får dig att svänga på höfterna"
+            />
           </>
         )}
         <button type="submit">Skicka</button>

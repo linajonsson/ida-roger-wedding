@@ -1,32 +1,13 @@
 import React, { useState } from "react"
 
 const RsvpForm = () => {
-  const [numberOfPeople, setNumberOfPeople] = useState(2)
-
-  const renderForm = numberOfPeople => {
-    const forms = []
-    for (var i = 1; i <= numberOfPeople; i++) {
-      forms.push(<FormFields index={i} />)
-    }
-    return forms
-  }
-
   return (
     <div className="container" id="rsvp">
       <h3>OSA</h3>
       <div className="container-text rsvp">
-        <p>Hur många vill du anmäla?</p>
-        <select
-          value={numberOfPeople}
-          onChange={e => setNumberOfPeople(e.target.value)}
-        >
-          <option>1</option>
-          <option>2</option>
-        </select>
         <form name="RSVP Form" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="RSVP Form" />
-
-          {renderForm(numberOfPeople)}
+          <FormFields />
           <button type="submit">Skicka</button>
         </form>
       </div>
@@ -36,23 +17,22 @@ const RsvpForm = () => {
 
 export default RsvpForm
 
-const FormFields = ({ index }) => {
+const FormFields = () => {
   const [isAttending, setIsAttending] = useState(true)
 
   return (
     <>
-      <p>Person {index}</p>
-      <Input label="Namn" id={`name-${index}`} />
+      <Input label="Namn" id="name" />
 
       <div className="radio-buttons">
         <p>Kommer du?</p>
         <label class="radio-button">
           <input
             type="radio"
-            name={`Kommer du? ${index}`}
-            value="attending"
+            name="Kommer du?"
+            value="yes"
             onChange={e => {
-              setIsAttending(e.target.value === "attending")
+              setIsAttending(e.target.value === "yes")
             }}
             checked={isAttending}
           />
@@ -65,10 +45,10 @@ const FormFields = ({ index }) => {
         <label class="radio-button">
           <input
             type="radio"
-            name={`Kommer du? ${index}`}
-            value="cantGo"
+            name="Kommer du?"
+            value="no"
             onChange={e => {
-              setIsAttending(e.target.value === "attending")
+              setIsAttending(e.target.value === "yes")
             }}
             checked={!isAttending}
           />
@@ -80,13 +60,10 @@ const FormFields = ({ index }) => {
       </div>
       {isAttending && (
         <>
+          <Input id="foodPreferences" label="Allergier/specialkost:" />
           <Input
-            id={`foodPreferences-${index}`}
-            label="Allergier/specialkost:"
-          />
-          <Input
-            id={`song-${index}`}
-            label={`Önska en låt som får dig att svänga på höfterna-${index}`}
+            id="song"
+            label="Önska en låt som får dig att svänga på höfterna"
           />
         </>
       )}
@@ -102,7 +79,7 @@ const Input = ({ label, id }) => (
       placeholder={label}
       name={id}
       id={id}
-      // required
+      required
     />
     <label htmlFor={id} class="form__label">
       {label}

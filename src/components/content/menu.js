@@ -1,5 +1,4 @@
 import React from "react"
-import WelcomeText from "./welcomeText"
 
 const Menu = () => (
   <div className="menu">
@@ -27,5 +26,7 @@ const menuTabs = [
   { id: "transportation", text: "Hur tar man sig dit?" },
   { id: "happenings", text: "Happenings" },
   { id: "rsvp", text: "OSA" },
+  { id: "dresscode", text: "Klädkod" },
   { id: "toastmadames", text: "Toastmadames" },
+  { id: "surroundings", text: "Omgivningen" },
 ]

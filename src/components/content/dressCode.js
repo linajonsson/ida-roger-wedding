@@ -1,7 +1,7 @@
 import React from "react"
 
 const DressCode = () => (
-  <div className="container" id="accomodation">
+  <div className="container" id="dresscode">
     <h3>Klädkod</h3>
     <div className="container-text">
       <p>Lördagens klädkod är kavaj.</p>

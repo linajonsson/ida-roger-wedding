@@ -10,16 +10,19 @@ const Menu = () => (
 
 export default Menu
 
-const MenuLink = ({ id, text }) => (
+export const MenuLink = ({ id, text, click }) => (
   <>
     <div className="menu-link">
-      <a href={`#${id}`}> {text}</a>
+      <a href={`#${id}`} onClick={click}>
+        {" "}
+        {text}
+      </a>
     </div>
     <div className="border"></div>
   </>
 )
 
-const menuTabs = [
+export const menuTabs = [
   { id: "welcome", text: "Välkommen" },
   { id: "destination", text: "Platsen" },
   { id: "accomodation", text: "Boende" },

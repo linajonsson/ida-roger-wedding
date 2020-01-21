@@ -2,7 +2,8 @@ import React from "react"
 import lisaKajsa from "../../images/lisa-kajsa.jpeg"
 
 const ToastMadames = () => (
-  <div className="toastmadames" id="toastmadames">
+  <div className="toastmadames">
+    <span className="anchor" id="toastmadames" />
     <h3>Toastmadames</h3>
     <div className="toastmadames-text">
       <p>

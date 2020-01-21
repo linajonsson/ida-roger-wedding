@@ -1,7 +1,8 @@
 import React from "react"
 
 const DressCode = () => (
-  <div className="container" id="dresscode">
+  <div className="container">
+    <span className="anchor" id="dresscode" />
     <h3>Klädkod</h3>
     <div className="container-text">
       <p>Lördagens klädkod är kavaj.</p>

@@ -1,7 +1,9 @@
 import React from "react"
 
 const WelcomeText = () => (
-  <div className="container" id="welcome">
+  <div className="container">
+    <span className="anchor" id="welcome" />
+
     <h3>Allora! </h3>
     <div className="container-text">
       <p>

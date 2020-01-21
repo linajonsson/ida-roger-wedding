@@ -14,7 +14,6 @@ export const MenuLink = ({ id, text, click }) => (
   <>
     <div className="menu-link">
       <a href={`#${id}`} onClick={click}>
-        {" "}
         {text}
       </a>
     </div>

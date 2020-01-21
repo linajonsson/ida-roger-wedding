@@ -1,7 +1,8 @@
 import React from "react"
 
 const Accomodation = () => (
-  <div className="container" id="accomodation">
+  <div className="container">
+    <span className="anchor" id="accomodation" />
     <h3>Boende</h3>
     <div className="container-text">
       <p>

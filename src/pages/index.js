@@ -12,6 +12,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import DressCode from "../components/content/dressCode"
 import Surroundings from "../components/content/surroundings"
+import Header from "../components/content/header"
 
 const IndexPage = () => (
   <Layout>

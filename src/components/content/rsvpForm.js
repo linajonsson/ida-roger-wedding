@@ -2,7 +2,8 @@ import React, { useState } from "react"
 
 const RsvpForm = () => {
   return (
-    <div className="container" id="rsvp">
+    <div className="container">
+      <span className="anchor" id="rsvp" />
       <h3>OSA</h3>
       <div className="container-text rsvp">
         <form name="RSVP Form" method="POST" data-netlify="true">

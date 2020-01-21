@@ -1,7 +1,9 @@
 import React from "react"
 
 const Surroundings = () => (
-  <div className="container" id="surroundings">
+  <div className="container">
+    <span className="anchor" id="surroundings" />
+
     <h3>Att se och göra i omgivningen</h3>
     <div className="container-text">
       <p>

@@ -5,12 +5,33 @@ $secondary-color: #f5f5ea;
 
 .background {
   background-color: $primary-color;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content";
+}
+.anchor {
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+
+  @media only screen and (min-width: $break-point) {
+    height: 0px; /*same height as header*/
+    margin-top: 0px;
+  }
 }
 
 .main {
   margin: 0 auto;
   max-width: 900px;
   padding-bottom: 2rem;
+  grid-area: content;
+  margin-top: 7rem;
+
+  @media only screen and (min-width: $break-point) {
+    margin-top: 0rem;
+  }
 }
 
 h3 {
@@ -24,9 +45,11 @@ h3 {
   }
 }
 
-.block-one {
+.header {
   &-container {
+    grid-area: header;
     position: fixed;
+    z-index: 10;
     display: flex;
     width: 100%;
     align-items: center;
@@ -35,6 +58,12 @@ h3 {
     margin: auto;
     padding: 1rem 0;
     background-color: $secondary-color;
+
+    .hamburger-menu {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
   }
 
   &-text {
@@ -45,16 +74,6 @@ h3 {
     font-family: Parisienne, "cursive";
     font-size: 30px;
     margin-bottom: 8px;
-  }
-
-  &-cover-image {
-    margin-top: 113px;
-  }
-
-  .hamburger-menu {
-    position: absolute;
-    top: 10px;
-    left: 10px;
   }
 
   @media only screen and (min-width: $break-point) {
@@ -119,7 +138,7 @@ h3 {
   }
 
   &-container {
-    padding: 10rem 20px 60px;
+    padding-top: 10rem;
     text-align: center;
   }
 }
@@ -199,7 +218,6 @@ h3 {
 
     .header {
       font-weight: bold;
-      // padding-bottom: 1rem;
       text-align: center;
     }
     .border {

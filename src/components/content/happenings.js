@@ -7,7 +7,9 @@ import whine from "../../images/Vin.jpg"
 const images = [whine, hotel, hotelFasad]
 
 const Happenings = () => (
-  <div className="happenings" id="happenings">
+  <div className="happenings">
+    <span className="anchor" id="happenings" />
+
     <h3>Happenings</h3>
 
     {happeningsInfo.map((happening, index) => {

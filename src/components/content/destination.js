@@ -2,7 +2,8 @@ import React from "react"
 import piemonte from "../../images/Piemonte.jpg"
 
 const Destination = () => (
-  <div className="destination" id="destination">
+  <div className="destination">
+    <span className="anchor" id="destination" />
     <div className="destination-text">
       <h3>Platsen för helgen</h3>
       <p>

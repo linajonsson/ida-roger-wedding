@@ -7,12 +7,13 @@
 
 import PropTypes from "prop-types"
 import React from "react"
-// import "../styles/global.scss"
 import "./layout.css"
+import Header from "./content/header"
 
 const Layout = ({ children }) => {
   return (
     <div className="background">
+      <Header />
       <div className="main">
         <main>{children}</main>
         <footer></footer>

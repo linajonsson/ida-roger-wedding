@@ -6,7 +6,9 @@ import train from "../../images/icons/train-24px.svg"
 const icons = [car, train]
 
 const Transportation = () => (
-  <div className="container" id="transportation">
+  <div className="container">
+    <span className="anchor" id="transportation" />
+
     <h3>Hur tar man sig dit?</h3>
     <div className="container-text">
       <p>

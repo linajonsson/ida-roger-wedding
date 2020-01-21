@@ -102,7 +102,7 @@ const Input = ({ label, id }) => (
       placeholder={label}
       name={id}
       id={id}
-      required
+      // required
     />
     <label htmlFor={id} class="form__label">
       {label}

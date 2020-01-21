@@ -42,7 +42,7 @@ const TransportationBlock = ({ header, text, alternatives }) => (
             <img src={icons[index]} alt="icon"></img>
             <div className="subheader">{a.header}</div>
           </div>
-          {<div>{a.text}</div>}
+          <div>{a.text}</div>
         </p>
       )
     })}

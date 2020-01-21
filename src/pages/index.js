@@ -18,16 +18,18 @@ const IndexPage = () => (
   <Layout>
     <SEO title="hej" />
     <Menu />
-    <BlockOne />
-    <WelcomeText />
-    <Destination />
-    <Accomodation />
-    <Transportation />
-    <Happenings />
-    <RsvpForm />
-    <DressCode />
-    <ToastMadames />
-    <Surroundings />
+    <div>
+      <BlockOne />
+      <WelcomeText />
+      <Destination />
+      <Accomodation />
+      <Transportation />
+      <Happenings />
+      <RsvpForm />
+      <DressCode />
+      <ToastMadames />
+      <Surroundings />
+    </div>
   </Layout>
 )
 

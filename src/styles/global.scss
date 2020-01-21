@@ -1,5 +1,6 @@
 $break-point: 600px;
-$break-point-menu: 1400px;
+$break-point-menu-min: 1160px;
+$break-point-menu-max: 1390px;
 $primary-color: #dfdebb;
 $secondary-color: #f5f5ea;
 
@@ -31,6 +32,14 @@ $secondary-color: #f5f5ea;
 
   @media only screen and (min-width: $break-point) {
     margin-top: 0rem;
+  }
+
+  @media only screen and (min-width: $break-point-menu-min) {
+    margin: 0 0 0 16rem;
+  }
+
+  @media only screen and (min-width: $break-point-menu-max) {
+    margin: 0 auto;
   }
 }
 
@@ -93,6 +102,14 @@ h3 {
       margin-top: 0;
     }
   }
+
+  @media only screen and (min-width: $break-point-menu-min) {
+    &-container {
+      .hamburger-menu {
+        display: none;
+      }
+    }
+  }
 }
 
 .menu {
@@ -120,7 +137,7 @@ h3 {
     margin: 0 auto;
   }
 
-  @media only screen and (min-width: $break-point-menu) {
+  @media only screen and (min-width: $break-point-menu-min) {
     display: block;
   }
 }
@@ -135,11 +152,17 @@ h3 {
     overflow-y: auto;
     background-color: $primary-color;
     opacity: 0.9;
+    z-index: 6;
   }
 
   &-container {
     padding-top: 10rem;
     text-align: center;
+    z-index: 7;
+
+    @media only screen and (min-width: $break-point) {
+      padding-top: 15rem;
+    }
   }
 }
 

@@ -40,7 +40,7 @@ const SlideShow = () => {
   const { node } = allFile.edges[index]
   return (
     <div className="slideshow">
-      <div>
+      <div className="slideshow-images">
         <Img
           fluid={node.childImageSharp.fluid}
           key={node.id}

@@ -27,6 +27,10 @@ const IndexPage = () => (
     <DressCode />
     <ToastMadames />
     <Surroundings />
+    <div className="last-text">
+      Ett särskilt och stort tack till Lina Jonsson som hjälpt oss att göra den
+      här hemsidan! ❤️
+    </div>
   </Layout>
 )
 

@@ -23,6 +23,10 @@ $secondary-color: #f5f5ea;
   }
 }
 
+a {
+  color: black;
+}
+
 .main {
   margin: 0 auto;
   max-width: 900px;
@@ -72,6 +76,7 @@ h3 {
       position: absolute;
       top: 10px;
       left: 10px;
+      cursor: pointer;
     }
   }
 
@@ -201,6 +206,26 @@ h3 {
   }
 }
 
+.slideshow {
+  margin-top: 2rem;
+  position: relative;
+
+  &-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 2rem;
+    &.right {
+      right: 0;
+    }
+
+    @media only screen and (min-width: $break-point) {
+      width: 3rem;
+    }
+  }
+}
+
 .transportation {
   &-block {
     padding-top: 1rem;
@@ -264,7 +289,7 @@ h3 {
       background-color: #fff;
 
       .header {
-        padding-bottom: 2rem;
+        padding-bottom: 1.5rem;
       }
 
       img {

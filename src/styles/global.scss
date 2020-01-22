@@ -199,30 +199,38 @@ h3 {
     padding: 1rem;
     background-color: $secondary-color;
   }
-  @media only screen and (min-width: $break-point) {
-    margin: 3rem 0 2rem 0;
-    &-text {
-      padding: 3rem;
-    }
-  }
 
   &-box {
     background-color: #fff;
     padding: 1rem;
     margin: 1rem 0;
-    display: grid;
-    grid-template-columns: 6rem auto;
 
     &-title {
       text-align: center;
-      font-size: 38px;
+      font-size: 30px;
       vertical-align: middle;
-      line-height: 2.5;
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
     }
     .border {
       border-bottom: 1px solid grey;
       width: 10rem;
       margin: 0.8rem auto 1.2rem auto;
+    }
+  }
+  @media only screen and (min-width: $break-point) {
+    margin: 3rem 0 2rem 0;
+    &-text {
+      padding: 3rem;
+    }
+    &-box {
+      display: grid;
+      grid-template-columns: 6rem auto;
+
+      &-title {
+        font-size: 38px;
+        line-height: 2.5;
+      }
     }
   }
 }
@@ -271,13 +279,26 @@ h3 {
 
     .alternatives {
       display: flex;
+      justify-content: center;
       img {
-        width: 4rem;
+        width: 2rem;
+        margin-bottom: 0.5rem;
       }
     }
 
     .subheader {
       font-weight: bold;
+    }
+
+    @media only screen and (min-width: $break-point) {
+      .alternatives {
+        display: flex;
+        justify-content: normal;
+        img {
+          width: 4rem;
+          margin-bottom: 0rem;
+        }
+      }
     }
   }
 }

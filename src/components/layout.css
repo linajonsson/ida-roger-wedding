@@ -1,5 +1,5 @@
 html {
-  font-family: "Arial";
+  font-family: "Roboto";
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
@@ -200,17 +200,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
-/* body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: "Dancing Script", cursive;
-  font-weight: normal;
-  word-wrap: break-word;
-  font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
-} */
+
 img {
   max-width: 100%;
   margin-left: 0;

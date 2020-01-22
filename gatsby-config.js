@@ -36,6 +36,7 @@ module.exports = {
           `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
           `parisienne\:400,400i`,
           `arial\:400,400i, 600`,
+          `roboto\:400,400i, 600`,
         ],
         display: "swap",
       },

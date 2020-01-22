@@ -25,6 +25,7 @@ $secondary-color: #f5f5ea;
 
 a {
   color: black;
+  cursor: pointer;
 }
 
 .main {
@@ -316,7 +317,7 @@ h3 {
 
 .toastmadames {
   position: relative;
-  padding-bottom: 8rem;
+  padding-bottom: 7rem;
   &-text {
     padding: 2rem 1rem;
     position: absolute;

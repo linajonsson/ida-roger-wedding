@@ -29,8 +29,6 @@ const SlideShow = () => {
     `
   )
 
-  console.log(allFile)
-
   //Minus 1 for array offset from 0
   const length = allFile.edges.length - 1
   const handleNext = () =>

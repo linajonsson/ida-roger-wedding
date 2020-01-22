@@ -205,6 +205,26 @@ h3 {
       padding: 3rem;
     }
   }
+
+  &-box {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 6rem auto;
+
+    &-title {
+      text-align: center;
+      font-size: 38px;
+      vertical-align: middle;
+      line-height: 2.5;
+    }
+    .border {
+      border-bottom: 1px solid grey;
+      width: 10rem;
+      margin: 0.8rem auto 1.2rem auto;
+    }
+  }
 }
 
 .slideshow {
@@ -251,10 +271,8 @@ h3 {
 
     .alternatives {
       display: flex;
-      align-items: center;
-
       img {
-        margin-right: 5px;
+        width: 4rem;
       }
     }
 

@@ -37,13 +37,14 @@ const TransportationBlock = ({ header, text, alternatives }) => (
     <p>{text}</p>
     {alternatives.map((a, index) => {
       return (
-        <p>
+        <div className="container-box">
           <div className="alternatives">
             <img src={icons[index]} alt="icon"></img>
-            <div className="subheader">{a.header}</div>
+            {/* <div className="subheader">{a.header}</div> */}
           </div>
+
           <div>{a.text}</div>
-        </p>
+        </div>
       )
     })}
   </div>

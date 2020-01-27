@@ -28,9 +28,9 @@ const FormFields = () => {
 
   return (
     <>
-      <Input label="Namn" id="name-1" />
+      <Input label="Namn" id="name-1" required />
       <Input label="Namn" id="name-2" />
-      <Input label="Email" id="email" />
+      <Input label="Email" id="email" required />
 
       <div className="radio-buttons">
         <p>Kommer du/ni?</p>
@@ -53,7 +53,7 @@ const FormFields = () => {
         <label class="radio-button">
           <input
             type="radio"
-            name="Kommer du?"
+            name="Kommer du/ni?"
             value="no"
             onChange={e => {
               setIsAttending(e.target.value === "yes")
@@ -68,10 +68,11 @@ const FormFields = () => {
       </div>
       {isAttending && (
         <>
-          <Input id="foodPreferences" label="Allergier/specialkost:" />
+          <Input id="foodPreferences" label="Allergier/specialkost:" required />
           <Input
             id="song"
             label="Önska en låt som får dig/er att svänga på höfterna"
+            required
           />
         </>
       )}
@@ -79,7 +80,7 @@ const FormFields = () => {
   )
 }
 
-const Input = ({ label, id }) => (
+const Input = ({ label, id, required }) => (
   <div class="form__group field">
     <input
       type="input"
@@ -87,7 +88,7 @@ const Input = ({ label, id }) => (
       placeholder={label}
       name={id}
       id={id}
-      required
+      required={required}
     />
     <label htmlFor={id} class="form__label">
       {label}

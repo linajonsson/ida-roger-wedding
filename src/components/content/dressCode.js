@@ -1,4 +1,6 @@
 import React from "react"
+import dress from "../../images/icons/pencil-dress.svg"
+import suit from "../../images/icons/wedding-suit.svg"
 
 const DressCode = () => (
   <div className="container">
@@ -9,7 +11,12 @@ const DressCode = () => (
       <p>Vad innebär det då? Här kommer en snabbguide för den osäkre!</p>
 
       <div className="container-box">
-        <div className="container-box-title"> 💃</div>
+        <div
+          className="container-box-title"
+          style={{ display: "flex", justifyContent: "space-evenly" }}
+        >
+          <img src={dress} alt="" style={{ width: "3rem" }} />
+        </div>
         Kavaj innebär en klänning, kjol eller byxdress som är finare än en
         vanlig vardagsklädsel utan att vara lika dressad som en aftonklädsel. En
         klänning som är vadlång eller knälång är rätt tänk men givetvis kan en
@@ -17,7 +24,12 @@ const DressCode = () => (
       </div>
 
       <div className="container-box">
-        <div className="container-box-title"> 🕺</div>
+        <div
+          className="container-box-title"
+          style={{ display: "flex", justifyContent: " space-evenly" }}
+        >
+          <img src={suit} alt="" style={{ width: "3rem" }} />
+        </div>
         Kavaj innebär (såklart och för förvirringens skull) inte kavaj. Kavaj
         innebär kostym. Kostymen kan vara ljus, den kan vara mörk, den kan vara
         mönstrad och den kan för all del vara i linne. Vi kommer trots allt vara

@@ -8,7 +8,6 @@ const icons = [car, train]
 const Transportation = () => (
   <div className="container">
     <span className="anchor" id="transportation" />
-
     <h3>Hur tar man sig dit?</h3>
     <div className="container-text">
       <p>
@@ -40,9 +39,7 @@ const TransportationBlock = ({ header, text, alternatives }) => (
         <div className="container-box">
           <div className="alternatives">
             <img src={icons[index]} alt="icon"></img>
-            {/* <div className="subheader">{a.header}</div> */}
           </div>
-
           <div>{a.text}</div>
         </div>
       )

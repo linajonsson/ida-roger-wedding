@@ -9,10 +9,9 @@ const Surroundings = () => (
       <p>
         Planerar ni att komma till Italien tidigare eller stanna längre? Eller
         letar ni efter en aktivitet att göra på bröllopsdagen som inte stavas
-        sovmorgon eller slappa vid poolen finns det flera närliggande mindre
-        byar, vingårdar och restauranger att besöka i närheten av Relais
-        Sant’Uffizio. Här kommer några förslag. Några platser nås på cykel medan
-        andra kräver bil.
+        sovmorgon eller slappa vid poolen finns det flera mindre byar, vingårdar
+        och restauranger att besöka i närheten av Relais Sant’Uffizio. Här
+        kommer några förslag. Några platser nås på cykel medan andra kräver bil.
       </p>
       <p>
         Vi kan rekommendera ett besök i den lilla byn Neive som ligger 4,7 mil
@@ -67,7 +66,7 @@ const Surroundings = () => (
       </p>
       <p>
         Tänk på att flertalet vingårdar kräver bokning. Kontakta dem därför
-        innan er ankomst.
+        innan ert besök.
       </p>
     </div>
   </div>

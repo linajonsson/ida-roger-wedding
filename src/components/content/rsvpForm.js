@@ -11,6 +11,11 @@ const RsvpForm = () => {
           <FormFields />
           <button type="submit">Skicka</button>
         </form>
+        <p>Vi är tacksamma för ert svar senast den 29 februari.</p>
+        <div className="rsvp-kids">
+          Barn är underbara (har vi hört), men vår bröllopshelg ser vi fram emot
+          att fira i sällskap med våra vuxna vänner.
+        </div>
       </div>
     </div>
   )
@@ -23,14 +28,16 @@ const FormFields = () => {
 
   return (
     <>
-      <Input label="Namn" id="name" />
+      <Input label="Namn" id="name-1" />
+      <Input label="Namn" id="name-2" />
+      <Input label="Email" id="email" />
 
       <div className="radio-buttons">
-        <p>Kommer du?</p>
+        <p>Kommer du/ni?</p>
         <label class="radio-button">
           <input
             type="radio"
-            name="Kommer du?"
+            name="Kommer du/ni?"
             value="yes"
             onChange={e => {
               setIsAttending(e.target.value === "yes")
@@ -55,7 +62,7 @@ const FormFields = () => {
           />
           <span class="label-visible">
             <span class="fake-radiobutton"></span>
-            Tyvärr kan jag inte
+            Tyvärr kan jag/vi inte
           </span>
         </label>
       </div>
@@ -64,7 +71,7 @@ const FormFields = () => {
           <Input id="foodPreferences" label="Allergier/specialkost:" />
           <Input
             id="song"
-            label="Önska en låt som får dig att svänga på höfterna"
+            label="Önska en låt som får dig/er att svänga på höfterna"
           />
         </>
       )}

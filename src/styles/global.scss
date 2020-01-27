@@ -28,6 +28,10 @@ a {
   cursor: pointer;
 }
 
+ul {
+  list-style-type: circle;
+}
+
 .main {
   margin: 0 auto;
   max-width: 900px;
@@ -324,10 +328,6 @@ h3 {
       width: 10rem;
       margin: 0.8rem auto;
     }
-
-    ul {
-      list-style-type: circle;
-    }
   }
 
   @media only screen and (min-width: $break-point) {
@@ -396,6 +396,11 @@ h3 {
 .rsvp {
   padding: 2rem 1rem;
   background-color: $secondary-color;
+
+  &-kids {
+    margin: 3rem 0 0;
+    font-style: italic;
+  }
 
   button {
     margin-top: 1.5rem;

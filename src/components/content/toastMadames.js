@@ -34,13 +34,12 @@ const ToastMadames = () => (
       <div className="toastmadames-details">
         <div>Lisa Englund </div>
         <div>073 039 47 62</div>
-        <div> Mailadress</div>
       </div>
-      <div>
+      <div className="toastmadames-details">
         <div> Kajsa Wahlstedt</div>
         <div> 072 730 62 61</div>
-        <div> Mailadress</div>
       </div>
+      <div>toastmadames.2020@outlook.com</div>
     </div>
     <img src={lisaKajsa} alt="toastmadames"></img>
   </div>

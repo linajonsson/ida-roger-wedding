@@ -13,34 +13,41 @@ const Surroundings = () => (
         och restauranger att besöka i närheten av Relais Sant’Uffizio. Här
         kommer några förslag. Några platser nås på cykel medan andra kräver bil.
       </p>
-      <p>
+      <div className="surroundings-box">
+        <div className="surroundings-box__title">Neive</div>
         Vi kan rekommendera ett besök i den lilla byn Neive som ligger 4,7 mil
         söder om Relais Sant’Uffizio. Byn bjuder på mysiga kullerstensgator med
         utsikt över vinodlingarna och en riktig tryffelbonanza-resturang som går
         under namnet Donna Selvatica.
-      </p>
-
-      <p>
+      </div>
+      <div className="surroundings-box">
+        <div className="surroundings-box__title">Canelli</div>
         Vidare kan vi rekommendera en tur till staden Canelli som ligger 4,8 mil
         söder om Relais Sant’Uffizio. Väl där rekommenderar vi ett besök i
         Contrattos vinkällare och provning av deras väldigt goda mousserande
         vin.
-      </p>
+      </div>
 
-      <p>
+      <div className="surroundings-box">
+        <div className="surroundings-box__title">Asti</div>
         Asti ligger 2 mil söder om Relais Sant’Uffizio och är en större stad
         jämfört med både Neive och Canelli. Staden erbjuder bland annat god
         gelato, piemontesisk mat och vin.
-      </p>
-      <p>
+      </div>
+      <div className="surroundings-box">
+        <div className="surroundings-box__title">La Morra</div>
         Den lilla byn La Morra ligger på en kulle omgiven av gröna vinodlingar
         ca 6 mil från Relais Sant’Uffizio. Här har man utsikt över Langhedalen.
         I byn finner man mysiga bagerier och caféer samt vinbarer och
         restauranger för varje smak.
-      </p>
-      <p>
-        Det finns givetvis en hel drös vingårdar i området med stora som små
-        vinproducenter. Några vi kan rekommendera är följande;
+      </div>
+
+      <div className="surroundings-box">
+        <div className="surroundings-box__title">Vingårdar</div>
+        <p>
+          Det finns givetvis en hel drös vingårdar i området med stora som små
+          vinproducenter. Några vi kan rekommendera är följande
+        </p>
         <ul>
           <li>
             Tenuta Fiammenga i Cioccaro. Ligger 2 km från Relais Sant’Uffizio.
@@ -63,11 +70,11 @@ const Surroundings = () => (
           </li>
           <li>Cantina Contratto i Canelli som producerar mousserande vin. </li>
         </ul>
-      </p>
-      <p>
-        Tänk på att flertalet vingårdar kräver bokning. Kontakta dem därför
-        innan ert besök.
-      </p>
+        <div>
+          Tänk på att flertalet vingårdar kräver bokning. Kontakta dem därför
+          innan ert besök.
+        </div>
+      </div>
     </div>
   </div>
 )

@@ -388,6 +388,20 @@ h3 {
   }
 }
 
+.surroundings {
+  &-box {
+    background-color: #fff;
+    padding: 1rem 1rem 1.5rem;
+    margin: 1.5rem 0;
+
+    &__title {
+      text-align: center;
+      font-weight: bold;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
 .last-text {
   text-align: center;
   padding: 1rem;

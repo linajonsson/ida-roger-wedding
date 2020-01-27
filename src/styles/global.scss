@@ -498,8 +498,11 @@ h3 {
       top: 0;
       display: block;
       transition: 0.2s;
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: $primary;
+      @media only screen and (min-width: $break-point) {
+        font-size: 1rem;
+      }
     }
 
     padding-bottom: 6px;

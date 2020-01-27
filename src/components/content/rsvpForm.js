@@ -28,8 +28,8 @@ const FormFields = () => {
 
   return (
     <>
-      <Input label="Namn" id="name-1" required />
-      <Input label="Namn" id="name-2" />
+      <Input label="Namn 1" id="name-1" required />
+      <Input label="Namn 2" id="name-2" />
       <Input label="Email" id="email" required />
 
       <div className="radio-buttons">

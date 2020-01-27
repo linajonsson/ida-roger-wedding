@@ -1,10 +1,16 @@
 import React from "react"
 import lisaKajsa from "../../images/lisa-kajsa.jpeg"
+import lisaKajsaCropped from "../../images/lisa-kajsa-cropped.jpeg"
 
 const ToastMadames = () => (
   <div className="toastmadames">
     <span className="anchor" id="toastmadames" />
     <h3>Toastmadames</h3>
+    <img
+      className="toastmadames-img__mobile"
+      src={lisaKajsaCropped}
+      alt="toastmadames"
+    ></img>
     <div className="toastmadames-text">
       <p>
         Vi är otroligt glada att våra fantastiska vänner Lisa Englund och Kajsa
@@ -41,7 +47,11 @@ const ToastMadames = () => (
       </div>
       <div>toastmadames.2020@outlook.com</div>
     </div>
-    <img src={lisaKajsa} alt="toastmadames"></img>
+    <img
+      className="toastmadames-img__desktop"
+      src={lisaKajsa}
+      alt="toastmadames"
+    ></img>
   </div>
 )
 

@@ -372,8 +372,6 @@ h3 {
   &-img {
     &__desktop {
       display: none;
-      transform: rotate(90deg);
-      margin-top: 28rem;
     }
     &__mobile {
       display: block;
@@ -397,6 +395,10 @@ h3 {
       margin-top: 28rem;
       &__desktop {
         display: block;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        z-index: 4;
+        margin-top: 28rem;
       }
 
       &__mobile {

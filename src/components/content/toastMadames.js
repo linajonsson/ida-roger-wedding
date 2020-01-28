@@ -1,5 +1,5 @@
 import React from "react"
-import lisaKajsa from "../../images/lisa-kajsa.jpeg"
+import lisaKajsa from "../../images/lisa-kajsa2.jpeg"
 import lisaKajsaCropped from "../../images/lisa-kajsa-cropped.jpeg"
 
 const ToastMadames = () => (

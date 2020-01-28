@@ -16,7 +16,7 @@ export const happeningsInfo = [
       "För de som önskar och inte planerar någon längre utflykt på lördagen kan enklare lunch köpas på Relais Sant’Uffizios restaurang",
       "Vigsel kl. 16",
       "Mingel med aperitivo",
-      "Bröllopsmiddag med italienska smaker och viner från Piemonte i Relais Sant Uffizio pergola",
+      "Bröllopsmiddag med italienska smaker och viner från Piemonte i Relais Sant’Uffizios pergola",
       "FEST!",
     ],
   },

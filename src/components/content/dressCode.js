@@ -15,7 +15,7 @@ const DressCode = () => (
           className="container-box-title"
           style={{ display: "flex", justifyContent: "space-evenly" }}
         >
-          <img src={dress} alt="" style={{ width: "3rem" }} />
+          <img src={dress} alt="" style={{ width: "3rem", height: "4rem" }} />
         </div>
         Kavaj innebär en klänning, kjol eller byxdress som är finare än en
         vanlig vardagsklädsel utan att vara lika dressad som en aftonklädsel. En
@@ -28,7 +28,7 @@ const DressCode = () => (
           className="container-box-title"
           style={{ display: "flex", justifyContent: " space-evenly" }}
         >
-          <img src={suit} alt="" style={{ width: "3rem" }} />
+          <img src={suit} alt="" style={{ width: "3rem", height: "4rem" }} />
         </div>
         Kavaj innebär (såklart och för förvirringens skull) inte kavaj. Kavaj
         innebär kostym. Kostymen kan vara ljus, den kan vara mörk, den kan vara

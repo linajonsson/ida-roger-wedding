@@ -12,7 +12,7 @@ export const transportationInfo = [
       {
         header: "Tåg",
         text:
-          "Från Milanos centralstation går det tåg till Asti, som ligger ca 20 minuter från Relais Sant’Uffizio. Tågfärden tar ca 2,5 timme. Från Asti går det sedan att ordna med taxi till Relais Sant’Uffizio. Vi återkommer med en uppdatering om ungefärligt pris för taxifärden.",
+          "Från Milanos centralstation går det tåg till Asti, som ligger ca 20 minuter från Relais Sant’Uffizio. Tågfärden tar ca 2,5 timme. Från Asti går det sedan att ordna med taxi till Relais Sant’Uffizio. Taxi från Asti till Relais Sant’Uffizo kostar ca 50 euro",
       },
     ],
   },

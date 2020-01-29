@@ -28,7 +28,7 @@ export const transportationInfo = [
       {
         header: "Tåg",
         text:
-          "Tåg går från centrala Turin (Turino Porta Nuova) till Asti och tar 35 minuter. Från Asti går det sedan att ordna med taxi till Relais Sant’Uffizio. Resan med taxi tar ca 20 minuter. Vi återkommer med en uppdatering om ungefärligt pris för taxifärden.",
+          "Tåg går från centrala Turin (Turino Porta Nuova) till Asti och tar 35 minuter. Från Asti går det sedan att ordna med taxi till Relais Sant’Uffizio. Resan med taxi tar runt 20 minuter och kostar ca 50 euro.",
       },
     ],
   },

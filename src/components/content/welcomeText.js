@@ -22,6 +22,7 @@ const WelcomeText = () => (
         längre fram. Kika därför gärna in här med jämna mellanrum för att hålla
         er uppdaterade.
       </p>
+      <div className="welcome--text">Massa kärlek, Ida och Roger</div>
     </div>
   </div>
 )

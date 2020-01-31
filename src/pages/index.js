@@ -12,6 +12,7 @@ import Transportation from "../components/content/transportation"
 import WelcomeText from "../components/content/welcomeText"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import WeddingGifts from "../components/content/weddingGifts"
 
 const IndexPage = () => (
   <Layout>
@@ -27,6 +28,7 @@ const IndexPage = () => (
     <DressCode />
     <ToastMadames />
     <Surroundings />
+    <WeddingGifts />
     <div className="last-text">
       Ett särskilt och stort tack till Lina Jonsson som hjälpt oss att göra den
       här hemsidan! ❤️

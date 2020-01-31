@@ -31,4 +31,5 @@ export const menuTabs = [
   { id: "dresscode", text: "Klädkod" },
   { id: "toastmadames", text: "Toastmadames" },
   { id: "surroundings", text: "Omgivningen" },
+  { id: "weddingGift", text: "Bröllopsgåva" },
 ]

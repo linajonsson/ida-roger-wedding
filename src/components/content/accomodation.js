@@ -13,7 +13,9 @@ const Accomodation = () => (
 
       <p>
         Vill man komma tidigare eller stanna längre finns det möjlighet att göra
-        det. Kontakta då vår bröllopskoordinator Annika Loi på La Villa.
+        det. Kontakta då vår bröllopskoordinator Annika Loi på La Villa så snart
+        som möjligt, dock senast den 29 februari 2020. Vi kommer därefter
+        återkomma till er med pris per rum/natt.
       </p>
 
       <div>

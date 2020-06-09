@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Ida och Roger 2020`,
+    title: `Ida och Roger 2021`,
     description: ``,
     author: `@linajonsson`,
   },

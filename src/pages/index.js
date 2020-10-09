@@ -24,7 +24,7 @@ const IndexPage = () => (
     <Accomodation />
     <Transportation />
     <Happenings />
-    {/* <RsvpForm /> */}
+    <RsvpForm />
     <DressCode />
     <ToastMadames />
     <Surroundings />

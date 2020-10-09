@@ -27,6 +27,7 @@ export const menuTabs = [
   { id: "accomodation", text: "Boende" },
   { id: "transportation", text: "Hur tar man sig dit?" },
   { id: "happenings", text: "Happenings" },
+  { id: "rsvp", text: "OSA" },
   { id: "dresscode", text: "Klädkod" },
   { id: "toastmadames", text: "Toastmadames" },
   { id: "surroundings", text: "Omgivningen" },

@@ -11,7 +11,7 @@ const RsvpForm = () => {
           <FormFields />
           <button type="submit">Skicka</button>
         </form>
-        <p>Vi är tacksamma för ert svar senast den 31 mars 2021.</p>
+        <p>Vi är tacksamma för ert svar senast den 31 juli 2021.</p>
         <div className="rsvp-kids">
           Barn är underbara (har vi hört), men vår bröllopshelg ser vi fram emot
           att fira i sällskap med våra vuxna vänner.

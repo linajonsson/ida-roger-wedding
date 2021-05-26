@@ -17,7 +17,7 @@ const Header = () => {
           }}
         ></img>
         <div className="header-heading">Ida & Roger</div>
-        <div className="header-text">28/5/2021 - 30/5/2021</div>
+        <div className="header-text">24/9/2021 - 26/9/2021</div>
         <div className="header-text">Piemonte | Italien</div>
       </div>
     </>

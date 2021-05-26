@@ -1,10 +1,12 @@
 import React from "react"
+import ExtraInfo from "./extraInfo"
 
 const WelcomeText = () => (
   <div className="container">
     <span className="anchor" id="welcome" />
 
     <h3>Allora! </h3>
+    <ExtraInfo />
     <div className="container-text">
       <p>
         Vi gifter oss och vår önskan är att ni vill fira det tillsammans med oss

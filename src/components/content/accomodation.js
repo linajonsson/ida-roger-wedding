@@ -11,19 +11,8 @@ const Accomodation = () => (
         därför inte boka boende själva utan detta ordnar vi åt er.
       </p>
       <p>
-        Vill man komma tidigare eller stanna längre finns det möjlighet att göra
-        det. Kontakta då Johan Ekmark på La Villa så snart som möjligt, dock
-        senast den 28 februari 2021. Vi kommer därefter återkomma till er med
-        pris per rum/natt.
+        Vill man komma tidigare och/eller stanna längre finns det möjlighet att göra det. Vi ber er dock att boka detta på egen hand samt meddela oss så att vi enklare kan administrera fördelningen av rummen under bröllopshelgen.
       </p>
-      <div>
-        <div>Johan Ekmark</div>
-        <div>
-          E-post:{" "}
-          <a href="mailto:johan.ekmark@lavilla.se">johan.ekmark@lavilla.se</a>
-        </div>
-        <div>Tel: 08-514 202 90</div>
-      </div>
     </div>
   </div>
 )

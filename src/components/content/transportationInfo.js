@@ -32,10 +32,4 @@ export const transportationInfo = [
       },
     ],
   },
-  {
-    header: "Taxiservice ",
-    text:
-      "Saknar ni möjlighet att ta er till Relais Sant’Uffizio med bil eller tåg meddela gärna att ni är intresserade av transport samt med vilket flyg (datum, tid och flygplats) ni anländer till Italien. Vi ska då göra vårt bästa för att lösa detta med en gemensam transport.",
-    children: [],
-  },
 ]

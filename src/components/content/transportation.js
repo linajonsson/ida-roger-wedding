@@ -27,9 +27,9 @@ const Transportation = () => (
       <div className="transportation-block">
         <div className="header">Taxiservice</div>
         <p>Vi har mottagit nedan indikativa priser för transport till Relais Sant Uffizio. Priserna gäller för taxi fyra platser/minibuss 8 platser/minibuss 16 platser.</p> 
-         <p>Från Milano Malpensa till Relais Sant Uffizio: 3000/3800/5000 kronor</p> 
-         <p>Från Milano Linate till Relais Sant Uffizio: 3000/3800/5000 kronor</p> 
-         <p>Från Milano Bergamo Airport till Relais Sant Uffizio: 3800/4500/5750 kronor</p>
+        <p>- Från Milano Malpensa till Relais Sant Uffizio: 3000/3800/5000 kronor</p> 
+        <p>- Från Milano Linate till Relais Sant Uffizio: 3000/3800/5000 kronor</p> 
+        <p>- Från Milano Bergamo Airport till Relais Sant Uffizio: 3800/4500/5750 kronor</p>
       </div>
     </div>
   </div>
